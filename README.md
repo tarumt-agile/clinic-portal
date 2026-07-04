@@ -1,12 +1,33 @@
+# STEP-BY-STEP GUIDE ON HOW TO INSTALL TYPEHSI
 
+## What you guys need to do
+### paste inside your vscode terminel
+```git clone https://github.com/yourusername/clinic-portal.git``` <br>
+```cd clinic-portal```<br>
+```python -m venv venv```<br>
+```venv\Scripts\Activate.ps1```<br>
+```python -m pip install -r requirements.txt```<br>
+```python manage.py migrate```<br>
+```python manage.py createsuperuser```<br>
 
+### admin address:
+```http://127.0.0.1:8000/admin```<br>
+
+### SUPERUSER (admin) <br>
+username: pizza <br>
+email: pizza@gmail.com <br>
+password: 123 <br>
+
+<hr>
+
+## You Guys can ignore these one below
 ### Step 4: Create a virtual environment
 
 ```jsx
 python -m venv venv
 ```
 
-activate venv in ur terminel
+## activate venv in ur terminel
 
 ```jsx
 venv\Scripts\Activate.ps1
@@ -52,13 +73,8 @@ By default Django uses SQLite (fine for development, no setup needed):
 python manage.py migrate
 ```
 
-### Step 10: Create an admin login
+## Step 10: Create an admin login
 
 ```jsx
 python manage.py createsuperuser
 ```
-
-SUPERUSER (admin)
-username: pizza
-email: pizza@gmail.com
-password: 123
