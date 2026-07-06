@@ -7,7 +7,7 @@ Django-based clinic management portal, built with Python 3.11, tested with pytes
 - Python 3.11 (get it [here](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe))
 - Git
 - Docker (optional, for container demos)
-- VSCode with the Python and Django extensions recommended
+- VSCode with the Python, Django and YAML extensions recommended
 
 ## Installation
 
