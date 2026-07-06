@@ -16,6 +16,7 @@ staticfiles/
 .env
 
 # Testing / coverage
+.mypy_cahce/
 .pytest_cache/
 .coverage
 htmlcov/
