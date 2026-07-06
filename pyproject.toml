@@ -1,0 +1,38 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+exclude = '''
+/(
+    \.venv
+  | venv
+  | migrations
+  | \.git
+  | \.pytest_cache
+  | staticfiles
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+exclude = [
+    "venv",
+    "migrations",
+    ".git",
+    ".pytest_cache",
+    "staticfiles",
+]
+
+[tool.ruff.lint]
+# E/F = pycodestyle + pyflakes basics, I = import sorting
+select = ["E", "F", "I"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+exclude = ["venv", "migrations"]
+
+[[tool.mypy.overrides]]
+module = "*.migrations.*"
+ignore_errors = true

@@ -10,13 +10,26 @@ __pycache__/
 db.sqlite3
 *.log
 media/
+staticfiles/
 
 # Environment variables / secrets
 .env
 
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
 # VSCode
 .vscode/
+
+# PyCharm (in case your friend uses it)
+.idea/
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Docker
+*.pid
